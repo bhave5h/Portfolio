@@ -1,0 +1,127 @@
+body {
+  background: #323641;
+}
+
+.letter-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.animated-mail {
+  position: absolute;
+  height: 150px;
+  width: 200px;
+}
+
+/* BODY */
+.body {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 100px 200px;
+  border-color: transparent transparent #e95f55 transparent;
+  z-index: 2;
+}
+
+/* TOP FOLD */
+.top-fold {
+  position: absolute;
+  top: 50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 100px 0 100px;
+  border-color: #cf4a43 transparent transparent transparent;
+  transform-origin: 50% 0%;
+  z-index: 2;
+}
+
+/* BACK */
+.back-fold {
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  height: 100px;
+  background: #cf4a43;
+  z-index: 0;
+}
+
+/* LEFT */
+.left-fold {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 0 50px 100px;
+  border-color: transparent transparent transparent #e15349;
+  z-index: 2;
+}
+
+/* LETTER */
+.letter {
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  width: 160px;
+  background: white;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.letter-border {
+  height: 10px;
+  width: 100%;
+  background: repeating-linear-gradient(
+    -45deg,
+    #cb5a5e,
+    #cb5a5e 8px,
+    transparent 8px,
+    transparent 18px
+  );
+}
+
+.letter-title {
+  margin: 10px 0 0 5px;
+  height: 10px;
+  width: 40%;
+  background: #cb5a5e;
+}
+
+.letter-context {
+  margin: 10px 0 0 5px;
+  height: 10px;
+  width: 20%;
+  background: #cb5a5e;
+}
+
+.letter-stamp {
+  margin: 30px 0 0 120px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  background: #cb5a5e;
+  opacity: 0.3;
+}
+
+/* SHADOW */
+.shadow {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  height: 30px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: radial-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0)
+  );
+}
