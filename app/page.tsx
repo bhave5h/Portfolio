@@ -15,8 +15,8 @@ export default function Home() {
   const [color] = useState("ffffff");
 
   return (
-     <main className="gochi-hand-regular">
-      <div className="bg-[#515151]">
+     <main className="gochi-hand-regular background">
+      <div>
 
       <HandDrawnNav/>
 

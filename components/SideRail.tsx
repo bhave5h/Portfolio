@@ -26,7 +26,7 @@ export default function SideRail({
   return (
     <div
       className={`
-        fixed top-0
+        absolute top-0
         ${isLeft ? "left-4" : "right-4"}
         h-screen
         z-10
@@ -61,7 +61,7 @@ export default function SideRail({
                 absolute top-1/2 -translate-y-1/2
                 ${isLeft ? "left-full ml-3" : "right-full mr-3"}
                 whitespace-nowrap
-               text-white text-xl
+               text-xl
                 px-3 py-1 rounded-md
                 pointer-events-none
               `}

@@ -42,14 +42,14 @@ export const ContainerScroll = ({
   // -----------------------------
   const rotateRaw = useTransform(
     scrollYProgress,
-    [0.2, 0.6], // 👈 rotate only in this range
-    [20, 0],
+    [0.2, 0.4], // 👈 rotate only in this range
+    [10, 0],
     { clamp: true }
   );
 
   const scaleRaw = useTransform(
     scrollYProgress,
-    [0.2, 0.6],
+    [0.2, 0.4],
     isMobile ? [0.9, 1] : [1.05, 1],
     { clamp: true }
   );
@@ -82,7 +82,7 @@ export const ContainerScroll = ({
   return (
     <div
       ref={containerRef}
-      className="relative h-[30rem] md:h-[70rem] flex items-center justify-center "
+      className="relative h-[30rem] md:h-[60rem] flex items-center justify-center"
     >
       <div
         className="w-full py-10 md:py-0"
@@ -110,7 +110,7 @@ const Header = ({
   return (
     <motion.div
       style={{ translateY: translate }}
-      className="max-w-5xl mx-auto mb-[-14vh] text-center text-5xl md:text-7xl font-bold"
+      className="max-w-5xl mx-auto mb-[-13vh] text-center text-9xl md:text-9xl font-black"
     >
       {titleComponent}
     </motion.div>
@@ -140,9 +140,9 @@ const Card = ({
       }}
       className="max-w-5xl mx-auto h-[30rem] md:h-[40rem] w-full
                  rounded-[30px] border-3 border-[#6C6C6C]
-                 bg-[#222222] p-1 md:p-2"
+                 bg-[#000000] p-1 md:p-3"
     >
-      <div className="h-full w-full overflow-hidden rounded-2xl bg-gray-100 dark:bg-zinc-900 md:p-4">
+      <div className="h-full w-full overflow-hidden rounded-2xl bg-gray-500 md:p-0"> 
         {children}
       </div>
     </motion.div>
