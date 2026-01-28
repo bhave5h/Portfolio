@@ -10,6 +10,7 @@ import {Instagram, Github, Linkedin, Mail} from "lucide-react"; // Using lucide 
 
 const SketchyCircle = () => (
   <svg className="absolute -inset-4 w-[140%] h-[150%] pointer-events-none text-white opacity-80" viewBox="0 0 100 60" preserveAspectRatio="none">
+
     <motion.path
       d="M10,30 Q20,10 50,10 T90,30 T50,50 T10,30"
       fill="none"
@@ -23,6 +24,7 @@ const SketchyCircle = () => (
     />
   </svg>
 )
+
 
 const HomeGraphic = () => (
   <motion.div
